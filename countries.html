@@ -1,0 +1,26 @@
+<html>
+<head>
+ <title>Countries</title>
+<script type = "text/javascript">
+function getcapital() {
+ var capital = document.getElementById('c1').value;
+ document.getElementById('cap1').innerHTML = capital;
+
+
+}
+</script>
+</head>
+<body>
+ <form method = "post" name = "form1" id = "f1">
+Countries<select name = "country1" id = "c1" onChange= getcapital()>
+<option >None</option>
+<option value = "New Delhi">India</option>
+<option value = "Washington">America</option>
+<option value ="Canberra">Australia</option>
+<option value = "London">England</option>
+<option value = "Islamabad">Pakistan</option>
+</select><br>
+<label name = "capital" id = "cap1" style = "color : red; font-size : 200;">
+</form>
+</body>
+</html>
